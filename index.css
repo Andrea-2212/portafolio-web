@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'SwirlyCanalope'; 
+    src: url('Tipografía/SwirlyCanalope_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MadeSunflower'; /* El nombre que tú quieras darle */
+    src: url('Tipografía/MADE\ Sunflower\ PERSONAL\ USE.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OrangeAvenue'; /* El nombre que tú quieras darle */
+    src: url('Tipografía/OrangeAvenue.otf') format('opentype');
+    font-weight: normal; /* O '600' si es la versión Bold */
+    font-style: normal;
+}
+
+
+body  {
+    background: linear-gradient(135deg, #024060 0%, #024060 100%);
+    background-attachment: fixed;
+    font-family: 'SwirlyCanalope', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #f2f1f9;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: auto;
+    background: #024060; 
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px #024060;
+    padding: 0;
+    border: 1px solid #2a7387;
+}
+
+
+header {
+    background: #024060;
+    padding: 25px 30px;
+    border-bottom: 1px solid #5eb0c8;
+    position: relative;
+}
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 14px;
+    height: 14px;
+    background: #9fd3e3;
+    border-radius: 50%;
+    box-shadow:
+        24px 0 #5eb0c8,
+        48px 0 #2a7387;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-weight: 700;
+    margin-top: 20px;
+    color: #5eb0c8; 
+    text-shadow: 0 2px 15px #0284c7;
+}
+
+
+nav,
+aside {
+    font-family: 'MadeSunflower', sans-serif;
+    background: #5eb0c8 !important;
+    min-height: 100vh;
+    padding: 30px 20px !important;
+}
+
+
+.sticky-top {
+    background: #024060; 
+    backdrop-filter: blur(16px) saturate(180%); 
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid #2a7387; 
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-shadow: 0 8px 32px 0 #024060;
+    top: 20px;
+    z-index: 10;
+}
+
+
+.nav .btn-primary {
+    font-family: 'MadeSunflower', sans-serif;
+    background: #024060;
+    border: 1px solid #2a7387; 
+    color: #d2f1f9; 
+    border-radius: 14px;
+    padding: 12px 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    box-shadow: 0 4px 6px #024060;
+}
+
+.nav .btn-primary:hover {
+   
+    background: linear-gradient(135deg, #5eb0c8, #5eb0c8 100%); 
+    color: #ffffff; 
+    border-color: #5eb0c8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #2a7387;
+}
+
+
+
+.aside .badge {
+    font-family: 'OrangeAvenue', sans-serif;
+    background: #024060 !important;
+    color: #5eb0c8 !important;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 12px;
+    padding: 10px 14px !important;
+    font-size: 0.9rem !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.aside li:hover .badge {
+    background: #024060 !important;
+    border-color: #38bdf8;
+    color: #ffffff !important;
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #024060;
+}
+
+
+section {
+    background: #024060;
+    padding: 40px 30px;
+}
+
+.section-title {
+    font-family: 'MadeSunflower', sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    color: #d2f1f9;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.concepto-grafico {
+    margin-bottom: 40px;
+}
+
+.pdf-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 35px #024060;
+    background: #024060;
+    border: 1px solid #5eb0c8;
+}
+
+.pdf-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Videos independientes */
+.ratio video {
+    border-radius: 20px;
+    box-shadow: 0 15px 35px #024060;
+}
+
+/* MOCKUPS */
+#mockups img {
+    border-radius: 24px;
+    box-shadow: 0 15px 35px #024060;
+    border: 1px solid #2a7387;
+}
+
+/* FOOTER */
+footer {
+    background: #024060 !important;
+    border-top: 1px solid #5eb0c8;
+    border-radius: 0 0 28px 28px;
+}
+
+
+@media (max-width: 992px) {
+    nav,
+    aside {
+        min-height: auto;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        margin-top: 35px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container-fluid {
+        border-radius: 20px;
+    }
+
+    nav,
+    aside,
+    section {
+        width: 100%;
+    }
+
+    nav,
+    aside {
+        min-height: auto;
+        padding: 20px !important;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+   
+    .sticky-top {
+        position: relative !important;
+        top: 0 !important;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 15px;
+    }
+
+    .nav .btn-primary {
+        font-family: 'MadeSunflower', sans-serif;
+        width: 100%;
+    }
+
+    .pdf-wrapper {
+        aspect-ratio: 1 / 1.1; 
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+}
+
+
+.sticky-top {
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+.glass-liquid-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 30px; 
+    
+    
+    background: #024060; 
+    backdrop-filter: blur(14px) saturate(160%); 
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    
+    
+    border: 1px solid #2a7387; 
+    border-top: 1px solid #2a7387;
+    
+    box-shadow: 0 5px 15px #024060; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.glass-logo-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 50%; 
+    
+    background: #d2f1f9; 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    border: 1px solid #2a7387; 
+    box-shadow: inset 0 0 10px #024060;
+}
+
+
+.glass-button-text {
+    font-family: 'MadeSunflower', sans-serif;
+    flex-grow: 1; 
+    text-align: center;
+    color: #d2f1f9; 
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 1px 5px #024060; 
+}
+
+
+.glass-liquid-button:hover {
+    background: #2a7387; 
+    transform: translateY(-2px) scale(1.01); /* Pequeña elevación y expansión */
+    box-shadow: 0 10px 30px #024060; 
+    border-color: #024060; 
+}
+
+.glass-liquid-button:hover .glass-button-text {
+    color: #d2f1f9; 
+    text-shadow: 0 0 10px #5eb0c8; 
+}
+
+
+@media (max-width: 768px) {
+    .glass-liquid-button {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    .glass-button-text {
+        font-size: 0.95rem;
+    }
+    .glass-logo-frame {
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+    }
+}
+
